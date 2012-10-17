@@ -2,7 +2,12 @@
 
 INSTALLED_DIR=/usr/share/grubfix
 
+# Patch for Grub2 without the recordfail timeout arg.
 patch -uNr - /etc/grub.d/00_header $INSTALLED_DIR/00_header.patch
+
+# Config file with the arg.
+cp $INSTALLED_DIR/grub /etc/default/grub
+
 update-grub
 
 # After executing once from inside /etc, remove the symlink.

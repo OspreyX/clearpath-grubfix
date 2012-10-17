@@ -1,3 +1,9 @@
+clearpath-grubfix (0.2) precise; urgency=low
+
+  * Also support Grub2 with the recordfail timeout parameter.
+
+ -- Mike Purvis (Launchpad) <mpurvis@clearpathrobotics.com>  Wed, 17 Oct 2012 10:40:43 -0400
+
 clearpath-grubfix (0.1) precise; urgency=low
 
   * Initial release. 
